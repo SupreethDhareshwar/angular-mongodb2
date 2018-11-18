@@ -3,7 +3,7 @@
 Make sure to have nodejs 10.4 installed
 
 ```sh
-cd SlicePay
+cd angular-mongodb
 npm install
 cd server
 npm install
