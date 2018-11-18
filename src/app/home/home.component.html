@@ -1,0 +1,19 @@
+<mat-card *ngFor="let scrollObj of scrollData" class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{scrollObj.product}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src={{scrollObj.image}} alt="Photo of a Shiba Inu">
+    <mat-card-content>
+       <div>
+            <label class="w-50" style="font-weight:bold;">Price/ Unit(INR)  :   </label>
+            <span class="w-50">{{scrollObj["price/unit(INR)"]}}</span>     
+       </div> 
+       <div>
+            <label class="w-50" style="font-weight:bold;">Quantity     :   </label>
+            <span class="w-50">{{scrollObj["quantity"]}}</span>    
+       </div>
+                     
+    </mat-card-content>
+    <mat-card-actions>
+    </mat-card-actions>
+  </mat-card>
